@@ -43,8 +43,8 @@ https://www.beatsbydre.com/
   <img src="readme-images/beats_home.jpg" width="375px" alt="beats_home">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  gift guide-pagina
-  <img src="readme-images/beats_gift_guide.PNG" width="375px" alt="beats_gift_guide">
+  product-pagina
+  <img src="readme-images/beats_product_page.png" width="375px" alt="beats_gift_guide">
  
 </details>
 
