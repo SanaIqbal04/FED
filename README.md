@@ -56,7 +56,21 @@ https://www.beatsbydre.com/
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  Lijst met je bevindingen die in de test naar voren kwamen: 
+  
+  - viewport is aanpasbaar, kan in elke richting worden gedraaid
+  - Validatie klopt niet helemaal, paar errors aanwezig
+  - Navigatie met toetsenbord gaat goed, focus volgorde komt overeen met de visuele lay-out.  (Bij de home-pagina gaat na de focus van de nav naar de "play-knop" van de video in plaats van naar het "bestel op" knop. Kan anders?...)
+  - Horizontaal scrollen alleen aanwezig bij het switchen van vorige/volgende pagina's
+  - Heading elementen staan in de goede volgorde. (H1 op de home-pagina is niet aanwezig op de site, maar wel in de code. Op de ene laptop staat er wel een H1, maar bij een andere staat er een H2)
+  - Gebruik van list elementen aanwezig
+  - Alt teksten voor images aanwezig
+  - sommige media staat op auto-play, kan wel gepauseerd worden
+  - Geen "skip-link" aanwezig
+  - Bij slider is niet duidelijk wat precies de link is. Het vakje zelf of de tekst?..
+  - Geen dark mode aanwezig
+
+
 
 </details>
 
@@ -68,7 +82,7 @@ https://www.beatsbydre.com/
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/Breakdown-schets-hele-pagina.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
