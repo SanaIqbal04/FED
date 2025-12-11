@@ -110,17 +110,17 @@ https://www.beatsbydre.com/
 
   | student 1: Victoria      | student 2: Juliette      | student 3: Cheyenne  | student 4: Ana        |
   | ---            | ---                | ---          | ---              |
-  | Geen P nodig bij nodig bij een link, Img hoef je niet in een figure te wrappen |Aria-label voor screenreader             | H3 gebruiken voor kleiner kopjes, kan alleen als er een H2 boven staat   | Als je ergens iets kan invullen, is dat een input    |
-  | Als je in de header veel linkjes hebt, is het beter om een nav te gebruiken | Section moet een heading bevatten | Details elementen toepassen, footer hoeft geen heading, # gebruiken voor onnodige links | De list zelf is de ul, waarin de li's zitten |
+  | Geen P nodig bij bij een link, Img hoef je niet in een figure te wrappen |Aria-label voor screenreader             | H3 gebruiken voor kleiner kopjes, kan alleen als er een H2 boven staat   | Als je ergens iets kan invullen, is dat een input    |
+  | Als je in de header veel linkjes hebt is het beter om een nav te gebruiken | Section moet een heading bevatten | Details elementen toepassen, footer hoeft geen heading, # gebruiken voor onnodige links | De list zelf is de ul, waarin de li's zitten |
   | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - Format document gebruiken om bestand netter te maken
+  - Alle sections hebben een heading nodig
+  - # gebruiken voor links die je niet hebt
   - ...
 
 </details>
