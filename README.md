@@ -120,7 +120,7 @@ https://www.beatsbydre.com/
 
   - Format document gebruiken om bestand netter te maken
   - Alle sections hebben een heading nodig
-  - # gebruiken voor links die je niet hebt
+  
   - ...
 
 </details>
