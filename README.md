@@ -137,7 +137,7 @@ https://www.beatsbydre.com/
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-  Ik kreeg eerst de tekst niet op de video en de positionering van de h1 en p lukte niet. Na 
+  Het lukte niet om de tekst op de video te krijgen en de h1 en p goed te positioneren.
   <img width="172" height="305" alt="image" src="https://github.com/user-attachments/assets/9edae323-83b4-4786-a662-9c3ef8a6d62d" />
 
 
@@ -187,6 +187,9 @@ https://www.beatsbydre.com/
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+<img width="173" height="273" alt="image" src="https://github.com/user-attachments/assets/295bc22f-102a-4ea3-b69a-d9c2f8bc5d9f" /> <img width="383" height="343" alt="image" src="https://github.com/user-attachments/assets/353f3a3b-1845-46b3-9df8-467c188feb01" />
+
+De carousel duurde lang om te maken, omdat het lastig was, maar het is uiteindelijk goed gelukt. Op de officiele site is daarop een animatie voor de scale, maar dat is met javascript gedaan, dus heb ik geprobeerd om het met css te doen.
 
 
   ### Agenda voor meeting
