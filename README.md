@@ -136,6 +136,8 @@ https://www.beatsbydre.com/
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  <img width="172" height="305" alt="image" src="https://github.com/user-attachments/assets/9edae323-83b4-4786-a662-9c3ef8a6d62d" />
+
 
 
   ### Agenda voor meeting
@@ -151,8 +153,8 @@ https://www.beatsbydre.com/
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
+  - Tekst op video zetten doormiddel van position relative en absolute
+  - Div kan je gebruiken om elementen vorm te geven
   - nog een punt
 - ...
 
@@ -198,7 +200,7 @@ https://www.beatsbydre.com/
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
+  - Je hoeft niet voor elk element de focus state toe te voegen, dat gat automatisch. Wel kan je zelf anders stijlen
   - punt 2
   - nog een punt
   - ...
