@@ -136,6 +136,8 @@ https://www.beatsbydre.com/
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+  Ik kreeg eerst de tekst niet op de video en de positionering van de h1 en p lukte niet. Na 
   <img width="172" height="305" alt="image" src="https://github.com/user-attachments/assets/9edae323-83b4-4786-a662-9c3ef8a6d62d" />
 
 
