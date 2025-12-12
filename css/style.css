@@ -1,87 +1,933 @@
+*:focus-visible {
+    outline: 4px dotted blue;
+    outline-offset: 3px;
+}
+
+:root {
+    --font-primary: 'PrimaryFont';
+    --font-secondary: 'SecondaryFont';
+    --achtergrond-kleur: #f1f1f1;
+    --achtergrond-kleur-2: #fff;
+    --achtergrondkleur-3: black;
+    --achtergrondkleur-4: #f2f0ea;
+    --text-kleur-primary: #000000;
+    --text-kleur-secondary: #ffff;
+}
+
+@font-face {
+    font-family: 'PrimaryFont';
+    src: url('/css/neuzeit-font/Neuzeit\ Grotesk\ Regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SecondaryFont';
+    src: url('/css/alternate-gothic/Alternate_Gothic/AlternateGotNo1D.ttf');
+}
+
+
+/*************************/
+/*     HOME-PAGINA       */
+/*************************/
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-primary);
+    background-color: var(--achtergrond-kleur);
 }
 
 header {
+    position: sticky;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 1em;
+    background-color: var(--achtergrond-kleur-2);
+    padding: 1em 0 1em 0;
+    z-index: 999;
 }
 
+/* logo */
 header img {
-    width: 23px;
-    align-content: center;
+    width: 24px;
 }
 
+/* logo a */
+header a {
+    width: 24px;
+    height: auto;
+    margin-right: 1.5em;
+}
+
+/* menu pagina's, verborgen tot hamburger wordt geklikt*/
+header nav ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--achtergrond-kleur-2);
+    padding-top: 5em;
+    display: none;
+    flex-direction: column;
+    gap: 2em;
+    font-size: 1.5em;
+    list-style-type: none;
+}
+
+header a {
+    text-underline-offset: .3em;
+    color: var(--text-kleur-primary);
+}
+
+header a:hover {
+    color: #197980;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* HAMBURGER MENU */
 header button {
-padding: 0;
-background-color: white;
-border: none;
-font-size:1em;
-display:grid;
-place-items:center;
-border-radius:50%;
+    background-color: var(--achtergrond-kleur-2);
+    border: none;
+    display: grid;
+    place-items: center;
+    margin-left: 1.5em;
+    z-index: 1000;
 }
 
 header button span {
-grid-row-start:1;
-grid-column-start: 1;
-width: 1.2em;
-height: .2em;
-background-color: black;
-
-transition: .5s;
-
+    grid-row-start: 1;
+    grid-column-start: 1;
+    width: 1.2em;
+    height: .2em;
+    background-color: var(--achtergrondkleur-3);
+    cursor: pointer;
+    transition: .5s;
 }
-
 
 header button span:nth-of-type(1) {
     transform: translateY(-.4em);
 }
 
-
 header button span:nth-of-type(3) {
     transform: translateY(.4em);
 }
 
-
-
 header button[aria-expanded="true"] span:nth-of-type(1) {
-    transform: rotate(45deg)
-    scaleX(1.25);
+    transform: rotate(45deg) scaleX(1.25);
 }
 
 header button[aria-expanded="true"] span:nth-of-type(2) {
-opacity: 0;
+    opacity: 0;
 }
 
 header button[aria-expanded="true"] span:nth-of-type(3) {
-transform: rotate(-45deg)
-scaleX(1.25);
+    transform: rotate(-45deg) scaleX(1.25);
+}
+
+/* Bron chatGPT: hoe kan je de menu laten openen? */
+header button[aria-expanded="true"]+ul {
+    display: flex;
 }
 
 
-
-
-
-section:first-of-type {
-    display: grid;
-    grid-template-rows: 2;
+/* SECTION 1 */
+.pagina-1 section:first-of-type {
+    position: relative;
 }
 
-section:first-of-type h1 {
-grid-row-start: 2;
-grid-row-end: 3;
-/* position: absolute; */
+.pagina-1 section:first-of-type div {
+    position: absolute;
+    color: var(--text-kleur-secondary);
+    bottom: 4em;
+    left: 1.5em;
+    z-index: 998;
 }
 
-section:first-of-type video {
-    grid-row-start: 1;
-  width: 100%;
-    height: 80vh;      
-    object-fit: cover;  
+.pagina-1 section:first-of-type a {
+    position: absolute;
+    text-decoration: none;
+    bottom: 1.5em;
+    left: 1.3em;
+    background-color: var(--achtergrond-kleur-2);
+    font-family: var(--font-secondary);
+    color: var(--text-kleur-primary);
+    padding: .5em 1.5em .5em 1.5em;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.1em;
+    letter-spacing: .025em;
+    cursor: pointer;
+    transition: 1s;
+    z-index: 997;
+}
+
+.pagina-1 section:first-of-type a:hover {
+    color: var(--text-kleur-secondary);
+    background-color: var(--achtergrondkleur-3);
+}
+
+.pagina-1 section:first-of-type h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.pagina-1 section:first-of-type p {
+    margin-top: .8em;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.pagina-1 section:first-of-type video {
     display: block;
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+
+
+/* SECTION 2 / CAROUSEL */
+.pagina-1 section:nth-of-type(2) h2 {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 2em;
+}
+
+@media (width > 10em) {
+    .pagina-1 ul {
+        scrollbar-width: none;
+        scroll-marker-group: after;
+    }
+}
+
+/* Navigatie dots onder carousel */
+.pagina-1 section:nth-of-type(2) ul::scroll-marker-group,
+.pagina-1 section:nth-of-type(6) ul::scroll-marker-group {
+    height: 3em;
+    margin: 1em 3.5em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    row-gap: .25em;
+    column-gap: .5em;
+}
+
+.pagina-1 section:nth-of-type(2) li::scroll-marker,
+.pagina-1 section:nth-of-type(6) li::scroll-marker {
+    content: '' / 'naar' attr(data-label);
+    width: .7em;
+    aspect-ratio: 1;
+    background-color: #d6d6d6;
+    border-radius: 50%;
+    transition: .25s;
+    margin-bottom: 2em;
+}
+
+.pagina-1 section:nth-of-type(2) li::scroll-marker:target-current,
+.pagina-1 section:nth-of-type(6) li::scroll-marker:target-current {
+    background: #232323;
+    opacity: 1;
+    scale: 1;
+}
+
+.pagina-1 section:nth-of-type(2) ul,
+.pagina-1 section:nth-of-type(6) ul {
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overscroll-behavior-x: contain;
+    gap: 1em;
+    list-style-type: none;
+    padding: 1.5em;
+}
+
+.pagina-1 section:nth-of-type(2) li,
+.pagina-1 section:nth-of-type(6) li {
+    flex-basis: 100%;
+    scroll-snap-align: center;
+    background-color: var(--achtergrond-kleur-2);
+    min-width: 60vw;
+    height: 380px;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, .1);
+    border-radius: 1.3em;
+    padding: 2em;
+    text-align: left;
+    cursor: pointer;
+}
+
+@keyframes slider {
+    0% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 1.1;
+    }
+}
+
+.pagina-1 section:nth-of-type(2) li:hover,
+.pagina-1 section:nth-of-type(6) li:hover {
+    animation-name: slider;
+    animation-duration: 1s;
+}
+
+.pagina-1 li img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: .8em;
+}
+
+.pagina-1 section:nth-of-type(2) p:first-of-type {
+    color: red;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1em;
+    margin-bottom: .2em;
+}
+
+.pagina-1 li h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: .5em;
+    margin-bottom: .4em;
+}
+
+.pagina-1 li p {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+
+/* SECTION 3 */
+.pagina-1 section:nth-of-type(3) {
+    background-image: linear-gradient(to bottom, #93d3d7, #30a9b2);
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
+
+.pagina-1 section:nth-of-type(3) P {
+    margin-left: 1.5em;
+    font-size: 1.4em;
+}
+
+.pagina-1 section:nth-of-type(3) a {
+    background-color: var(--achtergrondkleur-3);
+    color: var(--text-kleur-secondary);
+    text-decoration: none;
+    font-family: var(--font-secondary);
+    margin-left: 1.5em;
+    padding: .6em 1.6em .6em 1.6em;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 1.1em;
+    letter-spacing: .025em;
+    cursor: pointer;
+    transition: 1s;
+}
+
+section:nth-of-type(3) a:hover {
+    color: var(--text-kleur-primary);
+    background-color: var(--achtergrond-kleur);
+}
+
+section:nth-of-type(3) h2 {
+    text-align: left;
+    margin-left: 1em;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+section:nth-of-type(3) img {
+    width: 100%;
+    height: auto;
+    margin-top: 5em;
+
+}
+
+
+/* SECTION 4 */
+section:nth-of-type(4) {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--achtergrond-kleur-2);
+}
+
+section:nth-of-type(4) article {
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    align-items: center;
+}
+
+.pagina-1 section:nth-of-type(4) h2 {
+    font-size: 2em;
+    max-width: 80%;
+    align-self: center;
+}
+
+section:nth-of-type(4) h3 {
+    margin-bottom: .1em;
+}
+
+section:nth-of-type(4) img {
+    order: -2;
+    width: 5em;
+}
+
+article a {
+    color: var(--text-kleur-primary);
+    text-decoration-thickness: .15em;
+    text-underline-offset: .4em;
+}
+
+article a:hover {
+    color: #197980;
+    font-weight: 800;
+    text-decoration-style: wavy;
+    text-underline-offset: .4em;
+    text-decoration-thickness: .15em;
+}
+
+
+/* SECTION 5 */
+section:nth-of-type(5) img {
+    width: 100%;
+}
+
+.pagina-1 section:nth-of-type(5) {
+    position: relative;
+    background-image: linear-gradient(to bottom, #9ea7b0, #465861);
+    padding-bottom: 15em;
+    margin: 0;
+}
+
+section:nth-of-type(5) div {
+    color: var(--text-kleur-secondary);
+    position: absolute;
+    bottom: 6em;
+    margin-left: 1.5em;
+}
+
+section:nth-of-type(5) h2 {
+    text-align: left;
+    font-weight: 400;
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+section:nth-of-type(5) P {
+    font-size: 1.2em;
+}
+
+section:nth-of-type(5) a {
+    position: absolute;
+    bottom: 2em;
+    background-color: var(--achtergrond-kleur-2);
+    color: var(--text-kleur-primary);
+    text-decoration: none;
+    font-family: var(--font-secondary);
+    margin-left: 1.5em;
+    padding: .6em 1.6em .6em 1.6em;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 1.1em;
+    letter-spacing: .025em;
+    cursor: pointer;
+    transition: 1s;
+}
+
+section:nth-of-type(5) a:hover {
+    color: var(--text-kleur-primary);
+    background-color: var(--achtergrond-kleur);
+}
+
+
+/* SECTION 6 */
+.pagina-1 section:nth-of-type(6) p {
+    font-size: 1.1em;
+    font-weight: lighter;
+    line-height: 1.4em;
+}
+
+section:nth-of-type(6) img {
+    max-width: 100%;
+    margin-top: 3em;
+}
+
+
+/* SECTION 7 */
+section:nth-of-type(7) {
+    padding: 2em;
+    text-align: center;
+    background-color: var(--achtergrondkleur-3);
+    color: var(--text-kleur-secondary);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+form input:first-of-type {
+
+    border-radius: 1.5em;
+    padding: 1em;
+    margin-top: 1em;
+    background-color: #000000;
+    border-color: white;
+    color: var(--text-kleur-secondary);
+}
+
+form div {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    text-align: left;
+    font-size: .9em;
+}
+
+form input[type="submit"] {
+    background-color: var(--achtergrond-kleur-2);
+    color: var(--text-kleur-primary);
+    border: none;
+    padding: .6em 3em;
+    border-radius: 1.8em;
+    font-family: var(--font-secondary);
+    font-size: 1.4em;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+form input[type="submit"]:hover {
+    background-color: #197980;
+    color: var(--text-kleur-secondary)
+}
+
+
+
+
+/*************************/
+/*     PRODUCT-PAGINA       */
+/*************************/
+
+/* SECTION 1 */
+.pagina-2 {
+    background-color: var(--achtergrond-kleur-2)
+}
+
+.pagina-2 div {
+    margin-left: 1.5em;
+    margin-top: 1em;
+}
+
+.pagina-2 h1 {
+    margin-bottom: 0;
+    font-weight: 800;
+}
+
+.pagina-2 div p:first-of-type {
+    margin-top: .2em;
+    font-size: 1.2em;
+}
+
+.pagina-2 section:first-of-type>p {
+    margin-left: 1.2em;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.pagina-2 section:first-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: min(2vw, 1.53em);
+}
+
+.pagina-2 section:first-of-type ul {
+    display: flex;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    list-style-type: none;
+    padding: 0;
+    background-color: var(--achtergrond-kleur);
+}
+
+.pagina-2 section:first-of-type li {
+    flex-basis: 100%;
+    position: relative;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+}
+
+.pagina-2 section:first-of-type nav {
+    display: flex;
+    gap: .5em;
+    scroll-target-group: auto;
+    overflow: auto;
+    padding: 1em;
+    scrollbar-width: none;
+}
+
+.pagina-2 a:target-current {
+    cursor: default;
+}
+
+.pagina-2 section:first-of-type img {
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    border-radius: 2px;
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, .12);
+    min-width: 3.2em;
+}
+
+/* Bron ChatGPT: fieldset gebruiken om gerelateerde form inputs te groeperen. */
+fieldset {
+    display: flex;
+    gap: .5em;
+    border: none;
+    padding: 0;
+    margin-left: 1.5em;
+}
+
+legend {
+    margin-bottom: .5em;
+}
+
+fieldset label {
+    display: flex;
+    align-items: center;
+}
+
+/* geen display: none, omdat het dan geen focus kan krijgen */
+fieldset input {
+    appearance: none;
+    opacity: 0;
+}
+
+fieldset span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    padding: 2px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+fieldset span:hover {
+    transform: scale(1.1);
+}
+
+fieldset input:focus-visible+span {
+    outline: 2px solid blue;
+    outline-offset: 2px;
+}
+
+fieldset input:checked+span {
+    border-color: #24aa02;
+}
+
+/* Bron ChatGPT: background clip gebruiken voor witte ruimte tussen kleur en border */
+/* background-clip bepaalt tot waar de achtergrondkleur of afbeelding zich uitstrekt binnen een element. */
+label:first-of-type span {
+    background-color: black;
+    background-clip: content-box;
+}
+
+label:nth-of-type(2) span {
+    background-color: #c2bdb6;
+    background-clip: content-box;
+}
+
+label:nth-of-type(3) span {
+    background-color: #bfc5f7;
+    background-clip: content-box;
+}
+
+label:nth-of-type(4) span {
+    background-color: #ff9528;
+    background-clip: content-box;
+}
+
+.pagina-2 section button {
+    width: 90%;
+    align-self: center;
+    margin: 1.3em;
+    padding: .6em;
+    background-color: var(--achtergrondkleur-3);
+    border-radius: 100px;
+    color: var(--text-kleur-secondary);
+    font-family: var(--font-secondary);
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+.pagina-2 section button:hover {
+    background-color: var(--achtergrond-kleur-2);
+    border-color: var(--achtergrondkleur-3);
+    color: var(--text-kleur-primary);
+    cursor: pointer;
+}
+
+
+/* SECTION 2 */
+.pagina-2 section:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pagina-2 section:nth-of-type(2) h2 {
+    text-align: center;
+    align-self: center;
+    margin-top: 1.5em;
+    max-width: 80%;
+    font-size: 1.8em;
+}
+
+.pagina-2 section:nth-of-type(2) ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    list-style-type: none;
+    width: 80%;
+}
+
+.pagina-2 section:nth-of-type(2) li {
+    text-align: center;
+}
+
+.pagina-2 section:nth-of-type(2) img {
+    margin: auto;
+    width: 50%;
+    margin: 0 auto 1em auto;
+}
+
+.pagina-2 section:nth-of-type(2) li:nth-of-type(2) img {
+    width: 38%;
+}
+
+.pagina-2 section:nth-of-type(2) li:nth-of-type(4) img {
+    width: 32%;
+}
+
+.pagina-2 section:nth-of-type(2) li:nth-of-type(5) img {
+    width: 27%;
+}
+
+.pagina-2 section:nth-of-type(2) li:nth-of-type(6) img {
+    width: 28%;
+}
+
+.pagina-2 section:nth-of-type(2) p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+
+/* SECTION 3 */
+.pagina-2 section:nth-of-type(3) {
+    max-width: 1300px;
+    margin: 2em auto;
+}
+
+@media (width > 10em) {
+    .pagina-2 section:nth-of-type(3) ul {
+        scrollbar-width: none;
+        scroll-marker-group: after;
+    }
+}
+
+.pagina-2 section:nth-of-type(3) ul::scroll-marker-group {
+    height: 3em;
+    margin: 1em 3.5em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    row-gap: .25em;
+    column-gap: .5em;
+}
+
+.pagina-2 section:nth-of-type(3) li::scroll-marker {
+    content: '' / 'naar' attr(data-label);
+    width: .7em;
+    aspect-ratio: 1;
+    background-color: #d6d6d6;
+    border-radius: 50%;
+    transition: .25s;
+    margin-bottom: 2em;
+}
+
+.pagina-2 section:nth-of-type(3) li::scroll-marker:target-current {
+    background: #232323;
+    opacity: 1;
+    scale: 1;
+}
+
+.pagina-2 section:nth-of-type(3) ul {
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overscroll-behavior-x: contain;
+    gap: 1em;
+    list-style-type: none;
+    padding: 1.5em;
+    margin-left: 1.5em;
+}
+
+.pagina-2 section:nth-of-type(3) li {
+    flex-basis: 100%;
+    scroll-snap-align: start;
+    min-width: 60vw;
+    flex-shrink: 0;
+}
+
+.pagina-2 figure {
+    margin: 0;
+}
+
+.pagina-2 video {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+    border-radius: 1.3em;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, .1);
+}
+
+.pagina-2 figcaption {
+    margin-top: 1em;
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #333;
+    padding: 0 0.5em;
+}
+
+
+/* SECTION 4 */
+.pagina-2 section:nth-of-type(4) {
+    background-color: var(--achtergrondkleur-4);
+    text-align: left;
+    padding-top: 3em;
+    padding-left: 1.5em;
+    padding-right: 2em;
+    padding: 2em;
+}
+
+.pagina-2 section:nth-of-type(4) p:first-of-type {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.pagina-2 section:nth-of-type(4) h2 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: 800;
+}
+
+.pagina-2 section:nth-of-type(4) p:nth-of-type(2),
+.pagina-2 section:nth-of-type(4) p:nth-of-type(3) {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.pagina-2 section:nth-of-type(4) img {
+    order: 1;
+    width: 100%;
+    padding-top: 2em;
+}
+
+
+/* SECTION 5 */
+.pagina-2 section:nth-of-type(5) {
+    position: relative;
+}
+
+.pagina-2 section:nth-of-type(5) video {
+    order: 1;
+    margin-top: 2em;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pagina-2 section:nth-of-type(5) p {
+    position: absolute;
+    bottom: 2em;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    color: var(--text-kleur-secondary);
+    font-size: 1.8em;
+}
+
+
+/* SECTION 6 */
+.pagina-2 section:nth-of-type(6) {
+    margin-top: 2em;
+    padding: 1em;
+    background: linear-gradient(to bottom, #ced5d9, #808d95 25%, #000000 100%);
+}
+
+.pagina-2 section:nth-of-type(6) h2 {
+    text-align: center;
+    font-size: 2.7em;
+}
+
+.pagina-2 section:nth-of-type(6) p {
+    font-size: 1.3em;
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.4em;
+}
+
+.pagina-2 section:nth-of-type(6) img {
+    display: block;
+    margin: 3em auto;
+    height: 100%;
+    width: 80%;
+}
+
+
+/* FOOTER */
+footer {
+    padding: 3em;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer img {
+    opacity: 50%;
+    width: 24px;
+    height: 24px;
+}
+
+footer img:hover {
+    opacity: 100%;
 }

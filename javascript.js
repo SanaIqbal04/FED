@@ -8,3 +8,4 @@ function eersteStreepjesButtonKlik() {
     eersteStreepjesButton.ariaExpanded = "false"
   }
 }
+

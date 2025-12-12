@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   blauw
 
   #### Je focus:
-  Responsive
+  Surface plane
  
 </details>
 
@@ -105,7 +105,7 @@ https://www.beatsbydre.com/
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 
-  ### Agenda voor meeting
+   ### Agenda voor meeting
   samen met je groepje opstellen
 
   | student 1: Victoria      | student 2: Juliette      | student 3: Cheyenne  | student 4: Ana        |
@@ -115,12 +115,12 @@ https://www.beatsbydre.com/
   | ...            | ...                | ...          | ...              |
 
 
+
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - Format document gebruiken om bestand netter te maken
   - Alle sections hebben een heading nodig
-  
   - ...
 
 </details>
@@ -136,9 +136,9 @@ https://www.beatsbydre.com/
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-  Het lukte niet om de tekst op de video te krijgen en de h1 en p goed te positioneren.
-  <img width="172" height="305" alt="image" src="https://github.com/user-attachments/assets/9edae323-83b4-4786-a662-9c3ef8a6d62d" />
+  
+  - Het lukte niet om de tekst op de video te krijgen en de h1 en p goed te positioneren.
+  <img src="readme-images/video-tekst.png" width="375px" alt="tekst op video">
 
 
 
@@ -156,8 +156,8 @@ https://www.beatsbydre.com/
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - Tekst op video zetten doormiddel van position relative en absolute
-  - Div kan je gebruiken om elementen vorm te geven
-  - nog een punt
+  - Div kan je wel gebruiken om elementen vorm te geven
+
 - ...
 
 </details>
@@ -187,9 +187,12 @@ https://www.beatsbydre.com/
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-<img width="173" height="273" alt="image" src="https://github.com/user-attachments/assets/295bc22f-102a-4ea3-b69a-d9c2f8bc5d9f" /> <img width="383" height="343" alt="image" src="https://github.com/user-attachments/assets/353f3a3b-1845-46b3-9df8-467c188feb01" />
 
-De carousel duurde lang om te maken, omdat het lastig was, maar het is uiteindelijk goed gelukt. Op de officiele site is daarop een animatie voor de scale, maar dat is met javascript gedaan, dus heb ik geprobeerd om het met css te doen.
+  - De carousel was een beetje lastig te maken, code was niet helemaal duidelijk. Maar uiteindelijk wel gelukt. Ook is er op de officiele website een animatie op de carousel voor de scaling, maar dat is met javascript gedaan, dus was te lastig. Daarom heb ik het geprobeerd om het met css te doen.
+  <img src="readme-images/carousel.png" width="375px" alt="carousel">
+  <img src="readme-images/code-carousel.png" width="375px" alt="code carousel">
+
+
 
 
   ### Agenda voor meeting
@@ -206,8 +209,8 @@ De carousel duurde lang om te maken, omdat het lastig was, maar het is uiteindel
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - Je hoeft niet voor elk element de focus state toe te voegen, dat gat automatisch. Wel kan je zelf anders stijlen
-  - punt 2
-  - nog een punt
+  - Animatie met css geprobeerd
+
   - ...
 
 </details>
@@ -222,19 +225,22 @@ De carousel duurde lang om te maken, omdat het lastig was, maar het is uiteindel
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/site_screenshot1.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  - Ik begrijp nu meer over de positionering van elementen en het verschil tussen relative, absolute, fixed en sticky ook al twijfel ik nog steeds wel een beetje. En ook hoe je elementen boven elkaar plaats zoals tekst of buttons op een video of image. Ook  heb ik geleerd hoe je images op de juist formaat kan zetten, zodat het goed op de scherm past.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  - Ook heb ik geleerd dat je zonder classes semantisch kunt werken door gebruik te maken van selectors zoals :nth-of-type(). Daarnaast heb ik ook meer kennis opgedaan met de toegangelijkheid van de website.
+
+  <img src="readme-images/positionering.png" width="375px" alt="positionering">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  - Het responsive maken van mijn website vond ik het lastigste. Ik koos eerst voor de opdracht "Responsive", maar dit bleek een beetje moeilijk te zijn voor mij, dus ben ik overgestapt naar surface plane. Ook het maken van een dark mode ging niet soepel. Per element moet je aangeven welke kleuren moeten veranderen en sommige afbeeldingen waren niet transparant, waardoor ze niet goed zichtbaar waren op een donkere achtergrond. Dit kostte te veel tijd, dus heb ik besloten dit niet te doen. Ook vond ik het lastig om meer surface plane elementen toe te voegen, omdat de officiële website heel simpel, clean en strak is. Grote animaties of veel kleuren passen daar niet bij. Ik heb daarom gekozen voor kleine effecten zoals hover states en transitions.
+  
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/screenshot2.png" width="375px" alt="sreenshot site">
 </details>
 
 
@@ -250,8 +256,10 @@ De carousel duurde lang om te maken, omdat het lastig was, maar het is uiteindel
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. ChatGPT: Menu openklappen, fieldset gebruiken om gerelateerde form inputs te groeperen.
+  2. https://www.w3schools.com/tags/tag_fieldset.asp (Fieldset)
+  3. ChatGPT: background clip gebruiken voor witte ruimte in de kleurcirkels
+  4. Carousel hulpmiddel: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Overflow/Carousels#single_page_carousel_final_result
+
 
 </details>
