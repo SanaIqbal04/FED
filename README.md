@@ -36,7 +36,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-https://www.beatsbydre.com/
+https://www.beatsbydre.com/nl
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   home-pagina
@@ -85,10 +85,10 @@ https://www.beatsbydre.com/
   <img src="readme-images/Breakdown-schets-hele-pagina.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/breakdownschets-header.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/breakdownschets-carousel.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -173,6 +173,17 @@ https://www.beatsbydre.com/
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  - Elementen zoals buttons en links zijn beschrijvend
+  - Aria-labels voor links toegevoegd (verbeterd)
+  - HTML gevalideerd
+  - Focus state is zichtbaar voor interactieve elementen, alleen niet bij carousel. Het krijgt wel focus, maar geen lijn/styling eromheen. Focusvolgorde komt wel overeen met de layout. Navigatie met toetsenbord gaat goed
+  - Gebruik van kopteksten aanwezig, één h1 per pagina ook aanwezig. Kopteksten staan in een logische volgorde. Geen kopniveaus overgeslagen.
+  - Gebruik van ul aanwezig.
+  - img elementen hebben een alt tekst. decoratieve elementen hebben null alt. 
+  - Sommige media wordt niet automatisch afgespeeld (verbeterd), sommige wel. Sommige videos kunnen gepauzeerd worden (verbeterd), sommige niet.
+  - Button element op goede manier gebruikt.
+  - Geen dark mode
+  - Contrast voor tekst is aanwezig
 
 </details>
 
