@@ -84,10 +84,10 @@ https://www.beatsbydre.com/nl
   ### de hele pagina: 
   <img src="readme-images/Breakdown-schets-hele-pagina.jpg" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
+  ### dynamisch deel (header/menu): 
   <img src="readme-images/breakdownschets-header.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
+  ### wellicht nog een dynamisch deel (carousel): 
   <img src="readme-images/breakdownschets-carousel.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
@@ -184,6 +184,7 @@ https://www.beatsbydre.com/nl
   - Button element op goede manier gebruikt.
   - Geen dark mode
   - Contrast voor tekst is aanwezig
+  - Niet responsive
 
 </details>
 

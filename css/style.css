@@ -16,12 +16,12 @@
 
 @font-face {
     font-family: 'PrimaryFont';
-    src: url('/css/neuzeit-font/Neuzeit\ Grotesk\ Regular.otf') format('truetype');
+    src: url("neuzeit-font/Neuzeit Grotesk Regular.otf") format('opentype');
 }
 
 @font-face {
     font-family: 'SecondaryFont';
-    src: url('/css/alternate-gothic/Alternate_Gothic/AlternateGotNo1D.ttf');
+    src: url("alternate-gothic/Alternate_Gothic/AlternateGotNo1D.ttf") format('truetype');
 }
 
 
