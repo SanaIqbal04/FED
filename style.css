@@ -448,8 +448,8 @@ section:nth-of-type(5) a {
 }
 
 section:nth-of-type(5) a:hover {
-    color: var(--text-kleur-primary);
-    background-color: var(--achtergrond-kleur);
+    color: var(--text-kleur-secondary);
+    background-color: var(--achtergrondkleur-3);
 }
 
 
